@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_color"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Polio"
+            android:textSize="32sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/mainLayout"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:id="@+id/edtEmail"
+            android:textColorHint="@color/whiteColor"
+            android:textColor="@color/whiteColor"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:id="@+id/edtPassword"
+            android:textColor="@color/whiteColor"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/whiteColor"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26dp"
+            android:textStyle="bold"
+            android:id="@+id/btnLogin"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/whiteColor"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am Worker?"
+                android:id="@+id/workerLogin"
+                android:layout_alignParentStart="true"
+                android:textSize="16dp"
+                android:visibility="invisible"
+                android:textColor="@color/greyColor"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am Admin?"
+                android:id="@+id/adminLogin"
+                android:layout_alignParentEnd="true"
+                android:textSize="16dp"
+                android:textColor="@color/greyColor"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

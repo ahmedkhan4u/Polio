@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color"
+    android:padding="16dp"
+    android:id="@+id/container"
+    tools:context=".ChildRegisteration">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Child Registeration"
+                android:textSize="20sp"
+                android:fontFamily="cursive"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/whiteColor"
+                android:textStyle="bold"
+                android:id="@+id/topText"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Child Name"
+                android:id="@+id/registerChildName"
+                android:textColorHint="@color/whiteColor"
+                android:textColor="@color/whiteColor"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Father Name"
+                android:id="@+id/registerChildFName"
+                android:textColorHint="@color/whiteColor"
+                android:textColor="@color/whiteColor"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Child Age"
+                android:id="@+id/registerChildAge"
+                android:textColor="@color/whiteColor"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/whiteColor"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="House Number"
+                android:id="@+id/registerChildHouseNo"
+                android:textColor="@color/whiteColor"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:textColorHint="@color/whiteColor"
+                android:drawableStart="@drawable/address"
+                android:drawablePadding="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Address"
+                android:id="@+id/registerChildHomeAddress"
+                android:textColor="@color/whiteColor"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/whiteColor"
+                android:drawableStart="@drawable/address"
+                android:drawablePadding="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Done"
+                        android:textColor="@color/whiteColor"
+                        android:textStyle="bold"
+                        android:id="@+id/btnDone"
+                        ></RadioButton>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Left"
+                        android:layout_marginStart="40dp"
+                        android:textColor="@color/whiteColor"
+                        android:textStyle="bold"
+                        android:id="@+id/btnLeft"
+                        />
+                </LinearLayout>
+            </RadioGroup>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Register Child"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:textStyle="bold"
+                android:id="@+id/registerChildBtn"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/whiteColor"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

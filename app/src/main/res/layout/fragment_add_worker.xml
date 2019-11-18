@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_color"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".AddWorker">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainLayout"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Register Worker"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            android:id="@+id/topText"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/topText"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_image"
+            android:id="@+id/registerProfileImage"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="@color/whiteColor"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:id="@+id/registerEdtName"
+            android:textColorHint="@color/whiteColor"
+            android:textColor="@color/whiteColor"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:id="@+id/registerEdtEmail"
+            android:textColorHint="@color/whiteColor"
+            android:textColor="@color/whiteColor"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:id="@+id/registerEdtPassword"
+            android:textColor="@color/whiteColor"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/whiteColor"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Cnic Number"
+            android:id="@+id/registerEdtCnicNumber"
+            android:textColor="@color/whiteColor"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:textColorHint="@color/whiteColor"
+            android:drawableStart="@drawable/cnic"
+            android:drawablePadding="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Contact Number"
+            android:id="@+id/registerEdtContact"
+            android:textColor="@color/whiteColor"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:textColorHint="@color/whiteColor"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="10dp"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="26dp"
+            android:textStyle="bold"
+            android:id="@+id/registerButton"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/whiteColor"
+            />
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

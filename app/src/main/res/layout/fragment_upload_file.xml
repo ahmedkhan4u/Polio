@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_color"
+    android:id="@+id/uploadLayout"
+    tools:context=".UploadFileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter File Name"
+            android:textColorHint="@color/whiteColor"
+            android:textColor="@color/whiteColor"
+            android:id="@+id/edt_FileName"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_uploadFile"
+            android:layout_above="@+id/btn_uploadFile"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/whiteColor"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/btn_uploadFile"
+            android:text="UploadFile"
+            android:background="@drawable/btn_bg"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/whiteColor"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/btnChooseFile"
+            android:text="Choose File"
+            android:background="@drawable/btn_bg"
+            android:layout_below="@+id/btn_uploadFile"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/whiteColor"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
